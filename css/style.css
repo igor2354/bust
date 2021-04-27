@@ -486,7 +486,7 @@ input::-webkit-inner-spin-button {
   display: flex; }
 
 .products-promocode__value {
-  max-width: 155px;
+  max-width: 200px;
   width: 100%;
   font-family: "HelveticaNeueCyr";
   font-size: 12px;
@@ -800,32 +800,52 @@ input::-webkit-inner-spin-button {
     color: #000000; }
     .slider-recommend__name:hover {
       text-decoration: underline; }
-  .slider-recommend__prev::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(0, -50%) rotate(180deg);
-        -ms-transform: translate(0, -50%) rotate(180deg);
-            transform: translate(0, -50%) rotate(180deg);
-    right: 0;
-    width: 13px;
-    height: 23px;
-    background: url("../img/icon-arrow-slider.png") no-repeat; }
-  .slider-recommend__prev::after {
-    content: none; }
-  .slider-recommend__next::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-        -ms-transform: translate(0, -50%);
-            transform: translate(0, -50%);
-    right: 0;
-    width: 13px;
-    height: 23px;
-    background: url("../img/icon-arrow-slider.png") no-repeat; }
-  .slider-recommend__next::after {
-    content: none; }
+  .slider-recommend__prev {
+    width: 35px;
+    height: 35px; }
+    .slider-recommend__prev::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translate(0, -50%) rotate(180deg);
+          -ms-transform: translate(0, -50%) rotate(180deg);
+              transform: translate(0, -50%) rotate(180deg);
+      right: 0;
+      width: 35px;
+      height: 35px;
+      background: url("../img/icon-arrow-slider.png") no-repeat 55% center;
+      border-radius: 50%;
+      border: 1px solid transparent;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+    .slider-recommend__prev::after {
+      content: none; }
+    .slider-recommend__prev:hover::before {
+      border-color: #a44a99; }
+  .slider-recommend__next {
+    width: 35px;
+    height: 35px; }
+    .slider-recommend__next::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+              transform: translate(0, -50%);
+      right: 0;
+      width: 35px;
+      height: 35px;
+      background: url("../img/icon-arrow-slider.png") no-repeat 55% center;
+      border-radius: 50%;
+      border: 1px solid transparent;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+    .slider-recommend__next::after {
+      content: none; }
+    .slider-recommend__next:hover::before {
+      border-color: #a44a99; }
 
 .banner {
   position: absolute;
