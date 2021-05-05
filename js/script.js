@@ -4,25 +4,10 @@ document.addEventListener(
 		const sliderRecomend = new Swiper(".slider-recommend", {
 			slidesPerView: "auto",
 			spaceBetween: 10,
-
-			// slidesPerView: 1,
-			// spaceBetween: 10,
 			navigation: {
 				nextEl: ".slider-recommend__next",
 				prevEl: ".slider-recommend__prev",
 			},
-
-			// breakpoints: {
-			// 	500: {
-			// 		slidesPerView: 2,
-			// 		spaceBetween: 10,
-			// 	},
-
-			// 	768: {
-			// 		slidesPerView: "auto",
-			// 		spaceBetween: 10,
-			// 	},
-			// },
 		});
 	},
 	false
@@ -68,8 +53,14 @@ $(document).ready(function () {
 					$(".js-button-order").removeClass("fixed");
 				}
 			});
+
+			$(".products-promocode").addClass("active");
+			$(".products-promocode__from").slideDown();
 		} else {
 			$(".js-button-order").removeClass("fixed");
+
+			$(".products-promocode").removeClass("active");
+			$(".products-promocode__from").slideUp();
 		}
 	}
 
