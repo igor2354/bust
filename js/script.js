@@ -28,7 +28,7 @@ $(document).ready(function () {
 
 	function fixedButton() {
 		if (match.matches) {
-			$(window).on("resize, load", function () {
+			$(window).on("resize load", function () {
 				let elHeight = $(".basket-products__list").height();
 				let windowHeight = $(window).height();
 
