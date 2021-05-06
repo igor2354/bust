@@ -605,7 +605,9 @@ input::-webkit-inner-spin-button {
       .product-item__list .product-item__column:first-child {
         grid-column: span 2; }
       .product-item__list .product-item__column:nth-child(2) {
-        grid-column: span 2; }
+        -webkit-box-ordinal-group: 5;
+            -ms-flex-order: 4;
+                order: 4; }
       .product-item__list .product-item__column:nth-child(3) {
         display: none; }
       .product-item__list .product-item__column:nth-child(4) {
@@ -614,9 +616,9 @@ input::-webkit-inner-spin-button {
             -ms-flex-order: 5;
                 order: 5; }
       .product-item__list .product-item__column:nth-child(5) {
-        -webkit-box-ordinal-group: 5;
-            -ms-flex-order: 4;
-                order: 4; }
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2; }
     .product-item__group-detail {
       margin-top: 30px;
       grid-template-columns: -webkit-max-content -webkit-max-content;
@@ -631,7 +633,22 @@ input::-webkit-inner-spin-button {
       position: relative;
       -ms-flex-item-align: start;
           align-self: flex-start;
-      width: 100%; }
+      width: 100%;
+      font-size: 14px;
+      color: #2d2d2d; }
+      .product-item__price-one-old {
+        position: relative; }
+        .product-item__price-one-old::before {
+          content: "";
+          position: absolute;
+          top: 47%;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background: #a44a99;
+          -webkit-transform: rotate(348deg);
+              -ms-transform: rotate(348deg);
+                  transform: rotate(348deg); }
     .product-item__discount {
       position: relative;
       -ms-flex-item-align: start;
@@ -641,7 +658,8 @@ input::-webkit-inner-spin-button {
       position: relative;
       -ms-flex-item-align: start;
           align-self: flex-start;
-      width: 100%; }
+      width: 100%;
+      color: #ff75b2; }
     .product-item__delete {
       -ms-flex-item-align: start;
           align-self: flex-start; }
